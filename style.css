@@ -1,0 +1,224 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #797bc4, #6c7af5, #5848ec);
+  background-size: 300% 300%;
+  animation: gradientShift 8s ease infinite;
+  transition: background 0.5s ease;
+  padding: 20px;
+  color: #fff;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.toggle-icon {
+  font-size: 1.2rem;
+  transition: opacity 0.3s ease;
+}
+
+#theme-switch {
+  display: none;
+}
+
+#theme-switch:checked + .toggle-label {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#theme-switch:checked + .toggle-label .sun {
+  opacity: 0;
+}
+
+#theme-switch:checked + .toggle-label .moon {
+  opacity: 1;
+}
+
+.moon {
+  opacity: 0;
+  margin-left: 8px;
+}
+
+/* Glass Card  */
+.glass-card {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  width: 100%;
+  transition: all 0.5s ease;
+  margin-top: 80px;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(31, 38, 135, 0.3);
+}
+
+/* Avatar */
+.avatar-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+
+.avatar-section img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  background-image: linear-gradient(white, white), linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.avatar-section img:hover {
+  transform: scale(1.08);
+}
+
+/* Content */
+.content-section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.bio {
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+.time {
+  color: #d1d5db;
+  font-weight: 500;
+}
+
+/* Social Links */
+.social-links ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.social-links a {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 10px 18px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.social-links a:hover {
+  background: #fff;
+  color: #4f46e5;
+}
+
+/* Sections */
+section h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+section ul {
+  list-style: disc inside;
+  color: #d1d5db;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .glass-card {
+    flex-direction: row;
+  }
+
+  .avatar-section {
+    flex: 1;
+    padding: 3rem;
+  }
+
+  .content-section {
+    flex: 2;
+    padding: 3rem;
+  }
+}
+
+/* Dark Mode */
+body.dark {
+  background: radial-gradient(circle at top left, #0f172a, #1e293b);
+  color: #f1f5f9;
+}
+
+body.dark .glass-card {
+  background: rgba(15, 23, 42, 0.6);
+  border: 2px solid rgba(148, 163, 184, 0.2);
+}
+
+body.dark .social-links a {
+  background: rgba(148, 163, 184, 0.2);
+  color: #f8fafc;
+}
+
+body.dark .social-links a:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+body.dark .bio,
+body.dark .time,
+body.dark section ul {
+  color: #cbd5e1;
+}

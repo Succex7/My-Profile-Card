@@ -1,0 +1,22 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Node-related (if ever used in future)
+node_modules/
+npm-debug.log
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Build or dist folders (if added later)
+dist/
+build/
+
+# Cache files
+.cache/

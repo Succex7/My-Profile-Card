@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="theme-toggle">
+    <input type="checkbox" id="theme-switch" />
+    <label for="theme-switch" class="toggle-label">
+      <span class="toggle-icon sun">☀️</span>
+      <span class="toggle-icon moon">🌙</span>
+    </label>
+  </div>
+
+  <article data-testid="test-profile-card" class="profile-card glass-card">
+    <figure class="avatar-section">
+      <img src="image/avatar.jpg" alt="User Avatar" data-testid="test-user-avatar">
+    </figure>
+
+    <div class="content-section">
+      <header>
+        <h2 data-testid="test-user-name">Success Akporuovo</h2>
+      </header>
+
+      <p data-testid="test-user-bio" class="bio">
+        Web Developer & Photo Editor | Passionate about crafting clean UIs and exploring AI tech.
+      </p>
+
+      <p class="time">
+        Current Time (ms): <span data-testid="test-user-time"></span>
+      </p>
+
+      <nav data-testid="test-user-social-links" class="social-links">
+        <ul>
+          <li><a href="https://www.instagram.com/suc_cex_/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/success-akporuovo-4a94a6350" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+          <li><a href="https://github.com/Succex7" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+        </ul>
+      </nav>
+
+      <section data-testid="test-user-hobbies" class="hobbies">
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Reading historical contents</li>
+          <li>Drawing</li>
+          <li>Designing 3D Models</li>
+          <li>Researching</li>
+        </ul>
+      </section>
+
+      <section data-testid="test-user-dislikes" class="dislikes">
+        <h3>Dislikes</h3>
+        <ul>
+          <li>Slow Wi-Fi</li>
+          <li>Messy code</li>
+          <li>Overly spicy foods</li>
+        </ul>
+      </section>
+    </div>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
