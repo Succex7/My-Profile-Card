@@ -5,7 +5,7 @@ It includes semantic and accessible design principles, a live time display, and 
 
 
 ## Live Demo
- [View Live Project Here](https://your-live-link.netlify.app)
+ [View Live Project Here](https://success-profile-card-hng13.netlify.app/)
 
 ## Project Overview
 
@@ -27,7 +27,8 @@ The goal was to build a profile card component that is:
  **Personal Details** – Displays avatar, bio, hobbies, and dislikes dynamically  
 
 ## Preview
-*(Insert screenshot of your profile card here once you push to GitHub)*
+<img src="light-mode.png" alt="light-mode screenshot">
+<img src="dark-mode.png" alt="dark-mode screenshot">
 
 ## Tech Stack
 

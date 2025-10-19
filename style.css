@@ -102,8 +102,6 @@ body {
 
 
 .avatar-section img {
-  width: 350px;
-  height: 350px;
   width: 300px;
   height: 300px;
   object-fit: cover;
@@ -147,7 +145,6 @@ h2 {
 /* Social Links */
 .social-links ul {
   display: flex;
-  gap: 10px;
   gap: 25px;
   flex-wrap: wrap;
   list-style: none;
