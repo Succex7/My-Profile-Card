@@ -104,6 +104,8 @@ body {
 .avatar-section img {
   width: 350px;
   height: 350px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid transparent;
@@ -146,6 +148,7 @@ h2 {
 .social-links ul {
   display: flex;
   gap: 10px;
+  gap: 25px;
   flex-wrap: wrap;
   list-style: none;
 }
