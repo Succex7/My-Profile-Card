@@ -39,4 +39,4 @@ The goal was to build a profile card component that is:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/profile-card.git
+   git clone https://github.com/Succex7/profile-card.git
