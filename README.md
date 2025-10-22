@@ -27,8 +27,9 @@ The goal was to build a profile card component that is:
  **Personal Details** – Displays avatar, bio, hobbies, and dislikes dynamically  
 
 ## Preview
-<img src="light-mode.png" alt="light-mode screenshot">
-<img src="dark-mode.png" alt="dark-mode screenshot">
+<img src="image/light-mode.png" alt="light-mode screenshot">
+<img src="image/dark-mode.png" alt="dark-mode screenshot">
+
 
 ## Tech Stack
 
