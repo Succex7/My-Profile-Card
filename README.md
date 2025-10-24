@@ -5,7 +5,7 @@ It includes semantic and accessible design principles, a live time display, and 
 
 
 ## Live Demo
- [View Live Project Here](https://success-profile-card-hng13.netlify.app/)
+ [View Live Project Here](https://my-profile-card-hng13.netlify.app/)
 
 ## Project Overview
 
