@@ -1,4 +1,4 @@
-# Profile Card
+# Profile Card (by Success)
 
 A clean, responsive, and testable **Profile Card project** built using plain **HTML, CSS, and Vanilla JavaScript**.  
 It includes semantic and accessible design principles, a live time display, and a dynamic **light/dark mode toggle** for a modern user experience.
